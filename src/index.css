@@ -1,0 +1,639 @@
+/* ========================================
+   CALEBASSE DOREE - DESIGN ECOMMERCE CEREALES
+   Palette : Beige + Vert Naturel + Orange
+======================================== */
+
+/* IMPORTS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* FONDS */
+.home-bg { 
+  background: #f5f1e6 !important; 
+  min-height: 100vh; 
+  color: #2f3e2f;
+}
+.section-dark { 
+  background: #f5f1e6 !important; 
+  color: #2f3e2f;
+}
+.section-gradient { 
+  background: linear-gradient(135deg, #e8dfc8, #d9c9a3) !important;
+  color: #2f3e2f;
+  border-top: 1px solid rgba(47,62,47,0.1);
+}
+.footer-section { 
+  background: #2f3e2f !important; 
+  color: #f5f1e6;
+  border-top: 2px solid #e67e22;
+}
+
+/* COULEURS */
+.text-white { color: #2f3e2f !important; }
+.text-light { color: rgba(47,62,47,0.8) !important; }
+.gold-text { 
+  color: #e67e22 !important; 
+  font-weight: 700 !important;
+}
+.bleu-clair-text { 
+  color: #4f6f52 !important; 
+  font-weight: 600 !important;
+}
+
+/* NAVBAR */
+.navbar-calebasse {
+  background: rgba(245,241,230,0.95) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 2px solid #4f6f52;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+.nav-link-calebasse {
+  color: #2f3e2f !important;
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 25px !important;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.nav-link-calebasse:hover {
+  color: #e67e22 !important;
+  background: rgba(230,126,34,0.1) !important;
+  transform: translateY(-2px);
+}
+
+/* HERO */
+.hero-section { 
+  background: linear-gradient(135deg, #f5f1e6, #e8dfc8) !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-title { 
+  color: #4f6f52 !important;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+}
+.hero-text { 
+  color: #2f3e2f !important; 
+  font-size: 1.3rem;
+}
+
+/* BOUTONS */
+.btn-gold {
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+  border: 2px solid #e67e22 !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  padding: 15px 35px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 8px 25px rgba(230,126,34,0.4) !important;
+  transition: all 0.3s ease !important;
+}
+.btn-gold:hover {
+  background: linear-gradient(45deg, #f39c12, #e67e22) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 15px 35px rgba(230,126,34,0.6) !important;
+  color: #fff !important;
+}
+
+.btn-bleu-clair {
+  background: linear-gradient(45deg, #4f6f52, #6b8e23) !important;
+  border: 2px solid #4f6f52 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+/* CARDS */
+.product-card {
+  background: linear-gradient(145deg, #ffffff, #f0e6d2) !important;
+  border: 1px solid rgba(79,111,82,0.3);
+  border-radius: 20px;
+  color: #2f3e2f;
+}
+.product-card:hover {
+  border-color: #e67e22 !important;
+  box-shadow: 0 25px 50px rgba(230,126,34,0.3);
+  transform: translateY(-10px);
+}
+.product-image {
+  filter: brightness(1);
+}
+.card-overlay {
+  background: rgba(79,111,82,0.95) !important;
+  color: #fff !important;
+}
+.card-title {
+  color: #4f6f52 !important;
+}
+
+/* BADGE PANIER */
+.cart-badge-gold {
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+  color: #fff !important;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(230,126,34,0.6);
+  animation: bounce 2s infinite;
+  top: -8px;
+  right: -8px;
+  position: absolute;
+  z-index: 10;
+}
+
+/* TITRES */
+.section-title {
+  color: #4f6f52 !important;
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+}
+
+/* MAP */
+.map-frame {
+  border-radius: 25px !important;
+  border: 3px solid rgba(79,111,82,0.3) !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-section { min-height: 90vh; padding: 60px 0; }
+  .hero-title { font-size: 2.5rem !important; }
+  .btn-lg { padding: 12px 25px !important; }
+
+  .navbar-collapse {
+    background: rgba(245,241,230,0.98) !important;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 2px solid #4f6f52;
+  }
+}
+
+/* SUPPRESSION DES COULEURS OBSOLETES */
+.electric-text { color: #4f6f52 !important; }
+.btn-electric { 
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+}
+
+/* LOCALISATION */
+.map-container {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.map-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #e67e22, #f39c12);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0 8px 25px rgba(230,126,34,0.4);
+  font-size: 0.9rem;
+}
+.contact-card { backdrop-filter: blur(10px); }
+.contact-item { transition: all 0.3s ease; }
+.contact-item:hover { transform: translateX(10px); }
+
+/* FOOTER */
+.footer-main {
+  background: linear-gradient(180deg, #4f6f52 0%, #2f3e2f 100%);
+  color: #f5f1e6;
+  border-top: 4px solid #e67e22;
+}
+.footer-top { border-bottom: 1px solid rgba(245,241,230,0.2); }
+.footer-bottom {
+  background: #2f3e2f;
+  border-top: 1px solid rgba(245,241,230,0.1);
+}
+.light-text-link {
+  color: rgba(245,241,230,0.8) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0.25rem 0;
+}
+.light-text-link:hover {
+  color: #e67e22 !important;
+  transform: translateX(8px);
+}
+.footer-main ul li { margin-bottom: 0.5rem; }
+
+.social-links .btn-social {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.social-links .btn-social:hover {
+  background: rgba(230,126,34,0.2);
+  transform: translateY(-3px) scale(1.1);
+  color: #e67e22 !important;
+}
+
+.contact-footer { font-size: 0.95rem; }
+
+/* PRODUITS */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.filter-btn {
+  background: rgba(79,111,82,0.1);
+  color: #2f3e2f;
+  border: 2px solid rgba(79,111,82,0.3);
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: linear-gradient(45deg, #e67e22, #f39c12);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(230,126,34,0.4);
+}
+
+.cat-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(79,111,82,0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #4f6f52;
+}
+
+/* CART MODERNE */
+.cart-item-card-modern {
+  background: linear-gradient(145deg, #ffffff, #f0e6d2);
+  border: 2px solid rgba(79,111,82,0.2);
+  border-radius: 25px;
+  padding: 2.5rem;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cart-item-card-modern:hover {
+  border-color: #e67e22;
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px rgba(230,126,34,0.2);
+}
+
+.quantity-control-modern {
+  background: linear-gradient(145deg, rgba(79,111,82,0.1), rgba(79,111,82,0.05));
+  border: 2px solid rgba(79,111,82,0.4);
+}
+
+.qty-btn-modern {
+  background: linear-gradient(45deg, #e67e22, #f39c12);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(230,126,34,0.4);
+}
+
+.qty-display-modern {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #4f6f52 !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.form-control-dark {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(79,111,82,0.3);
+  color: #2f3e2f;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+.form-control-dark::placeholder {
+  color: rgba(47,62,47,0.6);
+}
+.form-control-dark:focus {
+  background: #fff;
+  border-color: #e67e22;
+  box-shadow: 0 0 0 0.2rem rgba(230,126,34,0.2);
+  color: #2f3e2f;
+}
+
+.gold-divider {
+  border-color: rgba(79,111,82,0.3);
+  opacity: 1;
+}
+
+.empty-cart-icon {
+  filter: drop-shadow(0 0 20px rgba(79,111,82,0.3));
+}
+
+/* BOUTON FIXE */
+.btn-see-products {
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  padding: 12px 20px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 6px 20px rgba(230,126,34,0.3) !important;
+  font-size: 0.9rem !important;
+  transition: all 0.3s ease !important;
+  white-space: nowrap;
+}
+
+.btn-see-products:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 30px rgba(230,126,34,0.5) !important;
+  color: #fff !important;
+}
+/* ========================================
+   CARDS CATÉGORIES - CÉRÉALES NATURE
+======================================== */
+
+/* CONTENEUR PRINCIPAL */
+.category-card-modern {
+  background: linear-gradient(145deg, #ffffff, #f5f1e6) !important;
+  border: 2px solid rgba(79,111,82,0.2) !important;  /* Vert nature */
+  border-radius: 25px !important;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+/* HOVER MAGIQUE */
+.category-card-modern:hover {
+  transform: translateY(-12px) !important;
+  border-color: #e67e22 !important;  /* Orange CTA */
+  box-shadow: 0 25px 50px rgba(230,126,34,0.25) !important;
+}
+
+/* IMAGE */
+.category-image-container {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-image-modern {
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 100%;
+}
+
+.category-card-modern:hover .category-image-modern {
+  transform: scale(1.08);
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* BADGE PRIX ORANGE */
+.category-price-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 800 !important;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 25px rgba(230,126,34,0.4) !important;
+  z-index: 10;
+}
+
+/* CONTENU */
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .category-image-container { height: 210px; }
+}
+
+@media (max-width: 768px) {
+  .category-image-container { height: 200px; }
+  .category-card-modern:hover { transform: translateY(-8px); }
+}
+
+@media (max-width: 576px) {
+  .category-price-badge { 
+    font-size: 0.85rem; 
+    padding: 8px 16px; 
+    top: 15px;
+    right: 15px;
+  }
+}
+/* ========================================
+   CART COMPLET - CÉRÉALES PREMIUM
+======================================== */
+
+/* CART ITEMS */
+.cart-item-card-modern {
+  background: linear-gradient(145deg, #ffffff, #f5f1e6) !important;
+  border: 2px solid rgba(79,111,82,0.2) !important;
+  border-radius: 25px !important;
+  padding: 2rem !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.cart-item-card-modern:hover {
+  border-color: #e67e22 !important;
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(230,126,34,0.2) !important;
+}
+
+/* IMAGE */
+.product-image-cart {
+  height: 160px !important;
+  border-radius: 20px !important;
+  border: 2px solid rgba(79,111,82,0.3) !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-image-cart:hover {
+  transform: scale(1.03);
+}
+
+/* INFO PRODUITS */
+.product-name {
+  color: #2f3e2f !important;
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* QUANTITÉ */
+.quantity-control-modern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 70px;
+  background: linear-gradient(145deg, rgba(79,111,82,0.1), rgba(79,111,82,0.05));
+  border: 2px solid rgba(79,111,82,0.4) !important;
+  border-radius: 40px !important;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.qty-btn-modern {
+  width: 50px;
+  height: 50px;
+  border: none !important;
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  font-size: 1rem;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 8px 25px rgba(230,126,34,0.4);
+  transition: all 0.3s ease;
+}
+
+.qty-btn-modern:first-child { left: 8px; }
+.qty-btn-modern:last-child { right: 8px; }
+
+.qty-btn-modern:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 12px 35px rgba(230,126,34,0.6);
+}
+
+.qty-display-modern {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #4f6f52 !important;
+  z-index: 1;
+  position: relative;
+}
+
+/* SUMMARY */
+.summary-card {
+  background: linear-gradient(145deg, #ffffff, #f5f1e6) !important;
+  border: 2px solid rgba(79,111,82,0.3) !important;
+  border-radius: 25px !important;
+  padding: 2.5rem !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.total-row {
+  padding-top: 1.5rem;
+  border-top: 2px solid rgba(79,111,82,0.3);
+}
+
+/* BOUTON REMPLIR INFOS - BLANC/NOIR */
+.btn-fill-info {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(79,111,82,0.3) !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  border-radius: 20px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.btn-fill-info:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-color: #e67e22 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(230,126,34,0.25);
+}
+
+/* FORMULAIRE */
+.delivery-form {
+  background: rgba(255,255,255,0.95) !important;
+  border-radius: 20px;
+  padding: 1.5rem !important;
+  border: 2px solid rgba(79,111,82,0.2) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-control-dark {
+  background: #ffffff !important;
+  border: 2px solid rgba(79,111,82,0.3) !important;
+  color: #2f3e2f !important;
+  border-radius: 15px !important;
+  padding: 14px 18px !important;
+  font-size: 1rem !important;
+}
+
+.form-control-dark:focus {
+  border-color: #e67e22 !important;
+  box-shadow: 0 0 0 0.25rem rgba(230,126,34,0.2) !important;
+}
+
+/* BOUTONS */
+.btn-gold {
+  background: linear-gradient(45deg, #e67e22, #f39c12) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 10px 30px rgba(230,126,34,0.4) !important;
+}
+
+.btn-gold:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(230,126,34,0.6) !important;
+}
+
+.gold-divider {
+  border-color: rgba(230,126,34,0.3) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .quantity-control-modern { width: 180px; height: 65px; }
+  .product-image-cart { height: 140px !important; }
+}
+
+@media (max-width: 768px) {
+  .cart-item-card-modern { padding: 1.5rem !important; }
+  .quantity-control-modern { width: 160px; height: 60px; }
+  .summary-card { padding: 2rem !important; margin-top: 2rem; }
+}
+
+@media (max-width: 576px) {
+  .btn-fill-info { font-size: 1rem !important; padding: 12px 16px !important; }
+}

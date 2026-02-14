@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Araw Thiéré",
+    "category": "thiéré",
+    "price": 1500,
+    "image": "../image/ArawThiéré.jpg",
+    "description": "Perles de mil pour couscous thiéré traditionnel sénégalais. Parfait pour le dîner du vendredi, fêtes et occasions spéciales."
+  },
+  {
+    "id": 2,
+    "name": "Araw Thiéré 1kg",
+    "category": "thiéré",
+    "price": 2800,
+    "image": "../image/araw.jpg",
+    "description": "Format famille pour thiéré authentique, riche en nutriments du mil local."
+  },
+  {
+    "id": 3,
+    "name": "Araw Fondé",
+    "category": "fonde",
+    "price": 1600,
+    "image": "../image/araw.jpg",
+    "description": "Perles de mil pour bouillie fondé parfumée à la muscade et fleur d'oranger. Petit-déjeuner nourrissant."
+  },
+  {
+    "id": 4,
+    "name": "Araw Fondé 1kg",
+    "category": "fonde",
+    "price": 2900,
+    "image": "../image/araw.jpg",
+    "description": "Grand format pour fondé crémeux, idéal avec lait et fromage blanc (soow)."
+  },
+  {
+    "id": 5,
+    "name": "Araw Lakh",
+    "category": "lakh",
+    "price": 1400,
+    "image": "../image/araw.jpg",
+    "description": "Graines de mil pour lakh traditionnel, léger et digeste. Parfait pour l'Aïd el Fitr."
+  },
+  {
+    "id": 6,
+    "name": "Araw Lakh 1kg",
+    "category": "lakh",
+    "price": 2700,
+    "image": "../image/araw.jpg",
+    "description": "Format généreux pour lakh avec neuteri ou lait caillé frais."
+  },
+  {
+    "id": 7,
+    "name": "Araw Thiakry",
+    "category": "thiakry",
+    "price": 1700,
+    "image": "../image/araw.jpg",
+    "description": "Perles pour thiakry 4 céréales, dessert gourmand pour baptêmes et Korité."
+  },
+  {
+    "id": 8,
+    "name": "Araw Thiakry 1kg",
+    "category": "thiakry",
+    "price": 3000,
+    "image": "../image/araw.jpg",
+    "description": "Thi akry premium, prêt pour vos occasions spéciales avec pâte d'arachide."
+  }
+]
